@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Web Development Content</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #2c3e50;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card, .img-border {
+            background-color: #34495e;
+            border-radius: 10px;
+            padding: 20px;
+            color: #fff;
+            overflow: hidden;
+            position: relative;
+            margin: 20px 0;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .card:hover, .img-border:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .img-border img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        h1, h3, h4, p {
+            margin: 20px 0;
+        }
+        .text-primary {
+            color: #FFD43B;
+        }
+        .fa-arrow-right {
+            margin-right: 10px;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes bounceIn {
+            from, 20%, 40%, 60%, 80%, to {
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+                animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            }
+            from {
+                opacity: 0;
+                transform: scale3d(.3, .3, .3);
+            }
+            20% {
+                transform: scale3d(1.1, 1.1, 1.1);
+            }
+            40% {
+                transform: scale3d(.9, .9, .9);
+            }
+            60% {
+                opacity: 1;
+                transform: scale3d(1.03, 1.03, 1.03);
+            }
+            80% {
+                transform: scale3d(.97, .97, .97);
+            }
+            to {
+                opacity: 1;
+                transform: scale3d(1, 1, 1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container overflow-hidden py-5">
+        <div class="row g-5">
+            <div class="col-lg-12 bg-light p-5" style="animation: bounceIn 1s ease;">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4 class="mb-1 text-primary">Learn More</h4>
+                        <h1 class="display-5 mb-4">We Are Expert Web Developers</h1>
+                        <p>We thrive on collaborative partnerships, harnessing the power of teamwork to bring your web development visions to life.</p>
+                    </div>
+                    <div class="col-lg-4" style="animation: bounceIn 1.2s ease;">
+                        <div class="img-border">
+                            <img class="img-fluid" src="img/faster-laptop.webp" alt="Faster Laptop">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column justify-content-center" style="animation: bounceIn 1.4s ease;">
+                        <div class="card">
+                            <p>Join us on the journey to a brighter, more connected future.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" style="animation: bounceIn 1.6s ease;">
+                        <div class="img-border">
+                            <img class="img-fluid" src="img/young-asian-woman-doing-research-work-her-business-with-computer-laptop-while-holding-notebook-home-top-view-copy-space_164138-751.avif" alt="Research Work">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column justify-content-center" style="animation: bounceIn 1.8s ease;">
+                        <div class="card">
+                            <h3 class="text-white">Trusted Partner For Web Development Transformation</h3>
+                            <p class="text-white">We thrive on building strong relationships with our clients and partners, ensuring every project is a true collaborative journey towards success.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column justify-content-center" style="animation: bounceIn 2s ease;">
+                        <p>We work closely with our clients to understand their goals and objectives, and we tailor our solutions to meet their specific needs. Our goal is not just to meet expectations but to exceed them, delivering exceptional results that drive success and growth.</p>
+                        <p><i class="fa-solid fa-arrow-right" style="color: #cd1818;"></i> 5 Years Of Experience</p>
+                        <p><i class="fa-solid fa-arrow-right" style="color: #cd1818;"></i> 250 Satisfied Clients</p>
+                        <p><i class="fa-solid fa-arrow-right" style="color: #cd1818;"></i> 200 Expert Employees</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
